@@ -5,16 +5,15 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    color: rgb(7, 94, 15);
-    font-family: 'Courier New', Courier, monospace;
-
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(158, 224, 255);
+    background-color: rgb(84, 175, 218);
 }
 .navbar {
     width: 95%;
@@ -43,11 +42,19 @@ li {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 
 #title {
     margin-top: 90px;
     text-align: center;
+    font-size: 2rem;
+}
+h1, h2, p {
+    margin-bottom: 30px;
 }
 
+section {
+    
+    text-align:center;
+}
