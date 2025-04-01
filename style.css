@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     --offwhiteseven: rgb(255, 255, 255);
     --darkblue: rgb(9, 9, 73);
     --darkblueeight: rgba(9, 9, 73, .8);
+    --shadow: rgba(0, 0, 0, 0.432);
 }
 
 html {
@@ -169,8 +170,6 @@ p {
     
 }
 
-
-
 section {   
     text-align:center;
     min-height: 100vh;
@@ -179,8 +178,6 @@ section {
     justify-items: center;
     align-items: center;
 }
-
-
 
 footer {
     background-color: var(--darkblue);
@@ -242,14 +239,14 @@ footer p {
 
 .about_home {
     padding: 5rem 3rem;
-  
+    box-shadow: var(--shadow) 0px 0px 200px;
 }
 
 .about_home_container {
   margin: 5rem;
+
 }
 .private-lending_container{
-    
     margin: 5rem;
     background-color: var(--offwhiteseven);
     padding: 5em 3rem;
@@ -257,6 +254,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--shadow) 0px 0px 20px;
 }
 
 .contact_container {
