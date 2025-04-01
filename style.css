@@ -42,12 +42,9 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS Reset above */
 
 :root {
-    --blue: rgb(167, 248, 255);
-    --main: rgb(63, 31, 156);
-    --mainsix: rgb(63, 31, 156, .6);
-    --accent: rgb(55, 138, 62);
-    --offwhite: rgb(255, 246, 251);
-    --offwhiteseven: rgba(255, 246, 251, 0.7);
+    --black: rgb(0, 0, 0);
+    --offwhite: rgb(247, 247, 247);
+    --offwhiteseven: rgb(255, 255, 255);
     --darkblue: rgb(9, 9, 73);
     --darkblueeight: rgba(9, 9, 73, .8);
 }
@@ -82,8 +79,9 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--main);
+    background-color: var(--darkblue);
 }
+
 .navbar {
     width: 95%;
     margin: auto;
@@ -121,8 +119,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: var(--blue);
-    
 }
 
 #title {
@@ -132,15 +128,16 @@ a:hover {
 
 
 h1 {
-    color: var(--blue);
-}
-h2 {
     color: var(--darkblue);
+}
+
+h2 {
+    color: var(--black);
     text-transform: capitalize;
 }
 
 h3 {
-  color: var(--offwhite);
+  color: var(--black);
   text-transform: capitalize;
 }
 
@@ -151,17 +148,21 @@ p {
     
 }
 
+
+
 section {   
     text-align:center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 
 
 footer {
-    background-color: var(--main);
+    background-color: var(--darkblue);
     margin-top: auto;
 }
 
@@ -201,13 +202,8 @@ footer p {
   font-size: .7rem;
 }
 
-.background { 
-    background-image: url(../gzl.re/img/bwbuilding.png);
-    background-color: var(--offwhiteseven);
-    background-blend-mode: lighten;
-    background-size: contain no-repeat;
-    background-attachment: fixed;
-}
+
+
 
 .top_home {
   padding-top: 3rem;
@@ -221,15 +217,16 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--darkblueeight);
 }
 
 .about_home {
     padding: 5rem 3rem;
-    background-color: var(--blue);
-    color: var(--darkblue);
+  
 }
 
+.about_home_container {
+  margin: 5rem;
+}
 .private-lending_container{
     
     margin: 5rem;
@@ -261,18 +258,17 @@ footer p {
 
 
 button {
-    background-color: var(--blue);
-    border: solid .2rem var(--darkblue);
-    color: var(--darkblue);
+    background-color: var(--darkblue);
+    border: none;
+    color: var(--offwhite);
     border-radius: 2rem;
-    padding: .7rem 1rem;
+    padding: .45rem 1rem;
     margin: 1rem;
     font-size: .75rem;
     text-transform: uppercase;
 }
 
 button:hover {
+    font-weight: bold;
     background-color: var(--darkblue);
-    color: var(--blue);
-    border-color: var(--blue);
 }
