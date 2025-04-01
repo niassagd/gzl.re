@@ -115,10 +115,13 @@ li {
 a {
     text-decoration: none;
     color: var(--offwhite);
+    text-transform: uppercase;
+    font-size: .6rem;
+    padding: 5px 10px;
 }
 
 a:hover {
-    text-decoration: underline;
+    outline: var(--offwhite) 1px solid;
 }
 
 #title {
