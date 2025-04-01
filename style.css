@@ -94,14 +94,16 @@ header{
 }
 
 .nav-branding{
-    font-size: 2rem;
+    font-size: 20px;
+    min-width: 40px;
+    height: 40px;
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 10px;
 }r
 
 h1, h2 {
@@ -110,19 +112,35 @@ h1, h2 {
 
 li {
     list-style-type: none;
+    color: var(--offwhite);
 }
 
 a {
     text-decoration: none;
-    color: var(--offwhite);
-    text-transform: uppercase;
-    font-size: .6rem;
-    padding: 5px 10px;
+    color: inherit;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
 }
 
 a:hover {
-    outline: var(--offwhite) 1px solid;
+    color: rgba(255, 255, 255, 0.63);
+    cursor: pointer;
 }
+
+.home-link {
+  border: var(--offwhite) 1px solid;
+}
+
+.home-link:hover {
+  color: rgba(255, 255, 255, 0.63);
+  border:rgba(255, 255, 255, 0.63) 1px solid;
+}
+
 
 #title {
     text-align: center;
