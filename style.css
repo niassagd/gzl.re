@@ -167,7 +167,7 @@ a {
     color: inherit;
 }
 
-.nav-link {
+.nav-menu .nav-link {
   text-transform: uppercase;
   font-size: 12px;
   padding: 10px 20px;
@@ -230,44 +230,59 @@ footer {
     margin-top: auto;
 }
 
-footer p {
-    text-align:center;
-    font-size: .5rem;
-    color: var(--offwhite);
-    margin-top: 20px;
-    margin-bottom: 20px;
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 10rem;
 }
 
-.footer_info {
+.footer-nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 50px;
 }
 
-.footer_nav ul {
-  padding: 1rem;
+.footer-nav ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1.3rem;
-  font-size: .8rem;
+  font-size: 14px;
+  padding-left: 0px;
 }
 
-.footer_contact_info {
+.footer-nav ul li {
+  position: relative;
+  padding: 0px 10px;
+}
+
+.footer-nav ul li:first-child {
+  position: relative;
+  padding-left: 0px;
+}
+
+.footer-nav ul span {
+  color: var(--offwhite);
+  justify-self: center;
+}
+
+.footer_nav ul li:last-child::after {
+  display: none;
+}
+
+.footer-logo {
   display: flex;
   flex-direction: column;
-  
+  align-items: flex-end;
+  min-width: 120px;
 }
 
-.footer_contact_info div p {
-  margin: 0;
-  font-size: .7rem;
+footer p {
+  text-align:center;
+  font-size: .5rem;
+  color: var(--offwhite);
+  white-space: nowrap;
 }
-
-
-
 
 .top_home {
   padding-top: 3rem;
@@ -295,7 +310,7 @@ footer p {
 .private-lending_container{
     margin: 5rem;
     background-color: var(--offwhiteseven);
-    padding: 5em 3rem;
+    padding: 5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
