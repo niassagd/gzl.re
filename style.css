@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     --offwhiteseven: rgb(255, 255, 255);
     /*Blue from logs according to website url entered in imagecolorpicker.com*/
     --darkblue: #1f1b56;
+    --darkblueeight: #1f1b56cc;
     --shadow: rgba(0, 0, 0, 0.432);
 }
 
