@@ -76,6 +76,51 @@ body {
     margin: 0;
 }
 
+#top-banner {
+  width: 100%;
+  background-color: var(--offwhite);
+
+}
+
+#top-banner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 45s infinite linear;
+}
+
+#top-banner ul li{
+  color: var(--darkblue);
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 10px 24px;
+  position: relative;
+ 
+}
+
+#top-banner ul li::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(189, 189, 189);
+  top: 0;
+  right: 0;
+}
+
+#top-banner ul li:last-child::after {
+  display: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-1400px);
+  }
+}
+
 header{
     position: fixed;
     top: 0;
