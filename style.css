@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6 {
     --black: rgb(0, 0, 0);
     --offwhite: rgb(247, 247, 247);
     --offwhiteseven: rgb(255, 255, 255);
-    --darkblue: rgb(9, 9, 73);
-    --darkblueeight: rgba(9, 9, 73, .8);
+    /*Blue from logs according to website url entered in imagecolorpicker.com*/
+    --darkblue: #1f1b56;
     --shadow: rgba(0, 0, 0, 0.432);
 }
 
@@ -85,7 +85,7 @@ body {
 #top-banner ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0;
   animation: scroll 45s infinite linear;
 }
 
