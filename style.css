@@ -71,7 +71,7 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     min-height: 100vh;
     margin: 0;
@@ -79,8 +79,8 @@ body {
 
 #top-banner {
   width: 100%;
+  height: 38px;
   background-color: var(--offwhite);
-
 }
 
 #top-banner ul {
@@ -96,7 +96,6 @@ body {
   white-space: nowrap;
   padding: 10px 24px;
   position: relative;
- 
 }
 
 #top-banner ul li::after {
@@ -133,7 +132,7 @@ header{
     width: 95%;
     margin: auto;
     padding: 0 3rem;
-    min-height: 3rem;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,11 +178,11 @@ a:hover {
     cursor: pointer;
 }
 
-header .home-link {
+header .current-link {
   border: var(--offwhite) 1px solid;
 }
 
-header .home-link:hover {
+header .current-link:hover {
   color: rgba(255, 255, 255, 0.63);
   border:rgba(255, 255, 255, 0.63) 1px solid;
 }
@@ -221,13 +220,14 @@ section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
 footer {
     background-color: var(--darkblue);
     margin-top: auto;
+    height: 178px;
 }
 
 .footer-container {
@@ -284,8 +284,9 @@ footer p {
   white-space: nowrap;
 }
 
-.top_home {
-  padding-top: 3rem;
+.main-site {
+  margin-top: 98px;
+  min-height: calc(100vh - 276px);
 }
 
 .top_home_container {
@@ -351,4 +352,35 @@ button {
 button:hover {
     font-weight: bold;
     background-color: var(--darkblue);
+}
+
+/*contact-form page*/
+
+form {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-names {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-name {
+  width: 100%;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+.contact-instructions {
+  font-size: 12px;
+  margin-left: 0;
 }
