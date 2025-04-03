@@ -117,7 +117,7 @@ body {
     transform: translateX(100%);
   }
   to {
-    transform: translateX(-1400px);
+    transform: translateX(-1234px);
   }
 }
 
