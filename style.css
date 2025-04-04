@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-    font-size: 14px;
+    font-size: 12px;
   }
   @media screen and (min-width: 320px) {
     html {
@@ -125,7 +125,11 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--darkblue);
+    
+}
+
+.header-container {
+  background-color: var(--darkblue);
 }
 
 .navbar {
@@ -226,6 +230,7 @@ section {
 
 footer {
     background-color: var(--darkblue);
+    color: var(--offwhite);
     margin-top: auto;
     height: 178px;
 }
@@ -242,6 +247,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   gap: 50px;
+  margin-bottom: 10px;
 }
 
 .footer-nav ul {
@@ -278,10 +284,10 @@ footer {
 }
 
 footer p {
-  text-align:center;
-  font-size: .5rem;
+  font-size: 12px;
   color: var(--offwhite);
   white-space: nowrap;
+  margin: 0;
 }
 
 .main-site {
@@ -320,23 +326,19 @@ footer p {
 }
 
 .contact_container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: var(--darkblueeight);
-    color: var(--offwhite);
+  margin: 0rem 5rem 2.5rem;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  background-color: var(--darkblueeight);
+  color: var(--offwhite);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact_container h2 {
   color: var(--offwhite);
 }
-
-.contact_info_section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 
 button {
     background-color: var(--darkblue);
@@ -344,7 +346,7 @@ button {
     color: var(--offwhite);
     border-radius: 2rem;
     padding: .45rem 1rem;
-    margin: 1rem;
+    
     font-size: .75rem;
     text-transform: uppercase;
 }
