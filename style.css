@@ -233,13 +233,14 @@ footer {
     color: var(--offwhite);
     margin-top: auto;
     height: 178px;
+    padding: 20px 5rem;
 }
 
 .footer-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 20px 5rem;
+  
 }
 
 .footer-nav {
